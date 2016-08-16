@@ -1,0 +1,39 @@
+body {
+    background-color: #8C489F;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 64px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+input[type=submit] {
+    border-radius: 0 3px 3px 0;
+    border: 0;
+    width: 106px;
+    height: 30px;
+    background: #FFFFFF;
+}
+
+input[type=email] {
+    padding-left: 9px;
+    font-size: 12px;
+    border: 0;
+    border-right: 1px gray solid;
+    height: 30px;
+    width: 178px;
+    background: #FFFFFF;
+}
+
+footer {
+    position: absolute;
+    font-size: 12px;
+    bottom: 3px;
+}

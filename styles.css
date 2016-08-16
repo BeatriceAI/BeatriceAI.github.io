@@ -30,7 +30,8 @@ em {
     width: 106px;
     height: 30px;
     background: #FFFFFF;
-    padding-left: 3px;
+    padding-left: 4px;
+    cursor: pointer;
 }
 
 .email {

@@ -3,18 +3,19 @@
         <link href="styles.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
         <title>BeatriceAI</title>
+
     </head>
     <body>
         <div class="container">
             BeatriceAI
             <!-- Begin MailChimp Signup Form -->
-            <form action="//beatrice.us14.list-manage.com/subscribe/post?u=2e27de212ecca169672e3ffc0&amp;id=c05556cd73" method="post" target="_blank">
+            <form id="emailForm" action="//beatrice.us14.list-manage.com/subscribe/post?u=2e27de212ecca169672e3ffc0&amp;id=c05556cd73" method="post" target="_blank">
                 <input type="email" name="EMAIL" placeholder="email address" class="email"/>
                 <!-- honeypot -->
                 <div style="position: absolute; left: -5000px;" aria-hidden="true">
                     <input type="text" name="b_2e27de212ecca169672e3ffc0_c05556cd73" tabindex="-1" value="">
                 </div>
-                <input type="button" value="KEEP ME POSTED" name="subscribe" class="btn"/>
+                <input id="submitBtn" value="KEEP ME POSTED" name="subscribe" class="btn"/>
             </form>
         </div>
         <footer>
@@ -23,4 +24,10 @@
 
         <!-- the future is broken. we can fix it. -->
     </body>
+
+    <script type="text/javascript">
+        document.getElementById('submitBtn').addEventListener('click', function() {
+            document.getElementById('emailForm').submit();
+        });
+    </script>
 </html>
